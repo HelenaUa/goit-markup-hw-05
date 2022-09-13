@@ -112,7 +112,7 @@ ul {
   content: '';
   position: absolute;
   left: 0;
-  top: 44px;
+  bottom: -33px;
 
   display: block;
   height: 4px;
@@ -121,7 +121,7 @@ ul {
   background-color: var(--accent-txt-cl);
   border-radius: 2px;
   border: transparent;
-  outline: 1px solid;
+  /* outline: 1px solid; */
 }
 
 .nav-link:hover,
@@ -386,27 +386,28 @@ ul {
 } */
 
 .product-our-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   bottom: 0;
   left: 0;
 
-  width: 370px;
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .text-our-work {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  height: 70px;
-
-  padding-top: 27px;
-  padding-bottom: 27px;
 
   color: var(--white-txt-cl);
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .title-our-work,
@@ -608,24 +609,6 @@ ul {
   position: relative;
   overflow: hidden;
 }
-
-/* .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 24px;
-  padding-right: 24px;
-
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;
-} */
 
 .nav-link-p:hover .text-overlay,
 .nav-link-p:focus .text-overlay {
